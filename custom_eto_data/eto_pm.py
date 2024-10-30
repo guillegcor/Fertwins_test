@@ -4,12 +4,12 @@ def calc_eto(df, mt, sr, ws, vps, hf=0, P=101.3, h=0.7):
     """
     Calcula la ETo para un Dataframe usando la fórmula de Penman-Monteith.
     Parámetros:
-        df (dataframe): DataFrame que contiene los datos.
+        df (dataframe)
         mt (str)       : Nombre de la columna de Temperatura media (ºC).
         sr (str)       : Nombre de la columna de Radiación solar (W/m²).
-        hf (str/int)   : Nombre de la columna de flujo de calor (si no existe, es 0).
         ws (str)       : Nombre de la columna de Velocidad del viento (m/s).
         vps (str)      : Nombre de la columna de Pendiente de presión de vapor (kPa/ºC).
+        hf (str/int)   : Nombre de la columna de flujo de calor (si no existe, es 0).
         P (float)      : Presión atmosférica (kPa), dependiente de la altitud (por defecto 101.3).
         h (float)      : Humedad relativa, por defecto se fija en 70% (0.7).
     """
